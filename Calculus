@@ -1,0 +1,30 @@
+/**
+ * Calculus class to do numerical integration.
+ * 
+ * @author YOUR NAME
+ * @version February 26, 2016
+ */
+public class Calculus
+{
+    public static double integrate(double lowerBound, double upperBound, int numRec)
+    {
+        double area = 0.0;
+        double midPoint = 0.0;
+        double base = (upperBound - lowerBound) / numRec;
+        for (double minBound = lowerBound; minBound = upperBound; lowerBound += base)
+        {
+            double midPoint = (base / 2) + lowerBound;
+            double height = midPoint.function();
+            double areaRec = base * height;
+        } 
+        double area = areaRec += areaRec;
+        
+        
+        return area;
+    }
+    
+    private static double function(double x)
+    {
+        return x * x;
+    }
+}
